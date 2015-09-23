@@ -105,6 +105,8 @@ In order to complete this assignment, you must do the following:
 This assignment will be graded via peer assessment.
 
 Commands:
+
+
     > m<-cbind(c(1,1/4),c(1/4,1))
     > m
          [,1] [,2]
