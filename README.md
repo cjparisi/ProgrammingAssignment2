@@ -103,3 +103,29 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
+
+Commands:
+> m<-cbind(c(1,1/4),c(1/4,1))
+> m
+     [,1] [,2]
+[1,] 1.00 0.25
+[2,] 0.25 1.00
+> n<-solve(m)
+> n
+           [,1]       [,2]
+[1,]  1.0666667 -0.2666667
+[2,] -0.2666667  1.0666667
+
+> a<-makeCacheMatrix()
+> a$get()
+     [,1]
+[1,]   NA
+> a$set(m)
+> a$get()
+     [,1] [,2]
+[1,] 1.00 0.25
+[2,] 0.25 1.00
+> cacheSolve(a)
+           [,1]       [,2]
+[1,]  1.0666667 -0.2666667
+[2,] -0.2666667  1.0666667
